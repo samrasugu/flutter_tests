@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
           title: const Text(title),
         ),
         body: ListView.builder(
+          itemCount: items.length,
           itemBuilder: (context, index) {
             return ListTile(
               title: Text(
